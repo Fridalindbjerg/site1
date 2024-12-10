@@ -1,0 +1,80 @@
+/* ********************* burgermenu ******************/
+
+.burger-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    color: red;
+    width: 100%;
+  }
+  #burger-toggle {
+    display: none;
+  }
+  
+  header {
+    text-align: left; /* Hvis den ændres til right skal der justeres i padding for nav ul */
+    display: flex;
+    flex-direction: column;
+    height: calc(2em + 20px);
+    /* padding-left: 2em; */
+  }
+  /* vis burger icon i mobile view */
+  .burger-menu {
+    display: block;
+  }
+  
+  /* skjul menuen */
+  nav ul {
+    display: none;
+    background: #fff;
+    position: absolute;
+    width: calc(100% - 5px); /* bredden er 100% minus højre/venstre padding */
+  }
+  
+  /* vis menu når checkbox er checked */
+  #burger-toggle:checked + label + nav ul {
+    display: block;
+  }
+  
+  nav a {
+    padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
+    /* padding-left: calc(5px + 2em); */
+    /* margin-left: -2em; */
+    line-height: 2.5em;
+    width: 100%;
+    display: inline-block;
+  }
+  
+  
+  /* FOOTER */
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #771515;
+  }
+  
+  footer li{
+    list-style: none;
+    color: #F2E8D6;
+    line-height: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  footer li a{
+    color: #F2E8D6;
+    line-height: 2em;
+    margin-top: 1em;
+  }
+  
+  #højre{
+    text-align: right;
+    padding-right: 1em;
+  }
+  
+  #venstre{
+    padding-left: 1em;
+  }
+  
+  body{
+    background-color: #F2E8D6;
+  }
