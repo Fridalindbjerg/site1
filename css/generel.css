@@ -78,3 +78,14 @@
   body{
     background-color: #F2E8D6;
   }
+
+/* HEADER */
+  #logo{
+      width: 200px;
+    }
+  .grid-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    
+  }
