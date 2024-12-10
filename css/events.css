@@ -10,10 +10,16 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 2em;
 
+
 }
 
 .grid-2 h2{
     margin-top: 0em;
+}
+
+.grid-2 p{
+    margin-right: 1em;
+    text-align: justify;
 }
 
 #lottie{
@@ -27,7 +33,7 @@
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
-    gap: 5px;
+    gap: 11px;
     scrollbar-width: none;
 
 }
