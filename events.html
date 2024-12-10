@@ -5,17 +5,25 @@
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <link rel="stylesheet" href="css/events.css">
     <link rel="stylesheet" href="css/generel.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Document</title>
 </head>
 <body>
     <main>
+        <section class="grid-5">
+            <div class="col"> <img src="img/p1.png" alt="1"></div>
+            <div class="col"> <img src="img/p6.webp" alt="2"></div>
+            <div class="col"> <img src="img/p3.jpg" alt="3"></div>
+            <div class="col"> <img src="img/p4.jpg" alt="4"></div>
+            <div class="col"> <img src="img/p5.jpg" alt="5"></div>
+        </section>
         <div class="grid-2">
             <div>
                 <H2>Events</H2>
                 <p>Tekst her</p>
             </div>
             <div>
-                <img id="skål" src="" alt="Skål">
+                <img id="skål" src="img/p1.png" alt="Karl og Tobias">
             </div>
         </div>
         <div id="lottie">
@@ -48,5 +56,24 @@
             </ul>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const grid = document.querySelector(".grid-5");
+        const scrollSpeed = 3;
+
+        const clonedContent = grid.innerHTML;
+        grid.innerHTML += clonedContent; // Duplicate the images/content
+
+        function autoScroll() {
+        grid.scrollLeft += scrollSpeed;
+
+        if (grid.scrollLeft >= grid.scrollWidth / 2) {
+        grid.scrollLeft = 0;
+        }
+    }
+
+  setInterval(autoScroll, 20);
+});
+      </script>
 </body>
 </html>
