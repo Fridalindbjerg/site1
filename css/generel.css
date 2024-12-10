@@ -4,7 +4,7 @@
     font-size: 2rem;
     cursor: pointer;
     display: none;
-    color: red;
+    color:#771515;
     width: 100%;
   }
   #burger-toggle {
@@ -84,8 +84,9 @@
       width: 200px;
     }
   .grid-header{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-betwen;
     align-items: center;
-    
   }
