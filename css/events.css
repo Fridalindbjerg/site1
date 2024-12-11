@@ -50,3 +50,69 @@
 
 .grid-5::-webkit-scrollbar {
     display: none; }
+
+#skål2{
+    display: none;
+}
+
+
+/*DESKTOP*/
+
+@media (width >=1200px) {
+    .grid-5 {
+        margin-top: 3em;
+        display: flex;
+        overflow-x: scroll;
+        gap: -30em;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    
+    }
+    
+    .grid-5 img{
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit:cover ;
+    }
+    
+    .grid-5 .col {
+        flex: 0 0 25%;
+    }
+    
+    .grid-5::-webkit-scrollbar {
+        display: none; }
+
+    #skål2{
+        display: block;
+        width: 100%;
+    }
+    
+    .grid-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5em;
+        margin-top: 3em;
+        margin-bottom: -17em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+    .grid-2 h2{
+        font-size: 40px;
+        margin-top: 0.2em;
+    }
+    .grid-2 img{
+        aspect-ratio: 4/3;
+        object-fit: cover;
+
+    }
+    .grid-2 #skål{
+        aspect-ratio: 4/3;
+        object-fit: cover;
+    }
+
+    #lottie{
+        margin-bottom: -20.5em;
+    }
+
+}
