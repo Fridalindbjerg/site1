@@ -141,3 +141,42 @@ header{
     font-size: 22px;
     text-decoration: none;
   }
+
+
+
+.tider{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.tider li{
+    list-style: none;
+    line-height: 2.5em;
+    font-size: 17px;
+}
+
+.tider h2{
+    margin-left: 2.5cqw;
+    color: #472E2E;
+}
+
+
+
+.header{
+    text-align: center;
+    margin-left: 2.5cqw;
+
+}
+
+.header a{
+    color: #472E2E;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.header h2{
+    color: #472E2E;
+    font-weight: 600;
+    font-size: 28px;
+}
