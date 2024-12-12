@@ -32,6 +32,7 @@
     height: 100%;
 }
 
+/*Scroll*/
 .grid-5 {
     margin-top: 3em;
     display: flex;
@@ -45,7 +46,7 @@
 .grid-5 img{
     width: 100%;
     aspect-ratio: 3/4;
-    object-fit:cover ;
+    object-fit:cover;
 }
 
 .grid-5 .col {
