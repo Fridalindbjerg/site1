@@ -15,12 +15,14 @@
 .grid-2 h2{
     margin-top: 0em;
     color: #472E2E ;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 6cqw;
 }
 
 .grid-2 p{
     margin-right: 1em;
     text-align: justify;
-
+    font-size: 18px;
 }
 
 #lottie{
@@ -91,6 +93,10 @@
     .grid-2 h2{
         font-size: 40px;
         margin-top: 0.2em;
+    }
+
+    .grid-2 p{
+        font-size: 20px;
     }
 
     .grid-2 #skål{
