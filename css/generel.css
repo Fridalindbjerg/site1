@@ -11,13 +11,6 @@
   display: none;
 }
 
-header {
-  text-align: left; /* Hvis den ændres til right skal der justeres i padding for nav ul */
-  display: flex;
-  flex-direction: column;
-  height: calc(2em + 20px);
-  /* padding-left: 2em; */
-}
 /* vis burger icon i mobile view */
 .burger-menu {
   display: block;
@@ -43,6 +36,7 @@ nav a {
   line-height: 2.5em;
   width: 100%;
   display: inline-block;
+  color: black;
 }
 
 /* FOOTER */
@@ -84,5 +78,18 @@ body {
 header{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
-  
+  justify-items: space-between;
+  align-items: center;
+}
+
+#Book{
+  text-align: right;
+}
+#Book a{
+  color: #771515;
+  list-style: none;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-decoration: none;
 }
