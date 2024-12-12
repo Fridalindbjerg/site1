@@ -93,3 +93,16 @@ header{
   font-size: 16px;
   text-decoration: none;
 }
+
+@media (width >=800px) {
+  .burger-menu {
+    font-size: 3rem;}
+  #logo{
+    width: 55%;
+    margin-left: 7.5cqw;
+  }
+  #Book a{
+    font-size: 22px;
+  }
+
+}
