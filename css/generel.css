@@ -4,7 +4,7 @@
   font-size: 2rem;
   cursor: pointer;
   display: none;
-  color: red;
+  color: #771515;
   width: 100%;
 }
 #burger-toggle {
@@ -76,4 +76,13 @@ footer li a {
 
 body {
   background-color: #f2e8d6;
+}
+
+#logo{
+  width: 100%;
+}
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  
 }
