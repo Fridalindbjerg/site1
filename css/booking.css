@@ -2,9 +2,9 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   /* gap: 10px; */
-  padding: 20px;
+  padding: 10px;
   background-color: #f2e8d6;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .day {
@@ -12,26 +12,57 @@
   align-items: center;
   justify-content: center;
   height: 35px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border: 1px solid black;
   /* border-radius: 5px; */
-  font-size: 14px;
+  font-size: 2cqh;
   /* font-weight: bold; */
 }
 
 .weekday {
+  border: 1px solid black;
+
   /* font-weight: bold; */
   text-align: center;
   padding: 2px 0;
 }
 
 .year {
-  grid-column: span 5;
-  padding: 20px 0px 20px 20px;
+  grid-column: span 2;
+  padding: 43% 0% 0% 10%;
+  font-size: 5cqw;
 }
 .month {
-  grid-column: span 2;
-  /* display: flex; */
-  padding-top: 20px;
-  padding-bottom: 20px;
+  grid-column: span 5;
+  padding-top: 9%;
+  /* padding-bottom: 20px; */
+  font-size: 12cqw;
+}
+
+@media (width >=400px) {
+  .day {
+    justify-content: right;
+    align-items: baseline;
+    height: 50px;
+    padding: 4px;
+  }
+
+  .year {
+    padding: 42% 0% 0% 2%;
+  }
+}
+
+@media (width >=700px) {
+  .day {
+    height: 70px;
+    padding: 7px;
+  }
+
+  .year {
+    padding: 42% 0% 0% 0%;
+  }
+
+  .calendar {
+    max-width: 700px;
+  }
 }
