@@ -97,9 +97,14 @@ h1 {
   grid-column: 3/7;
   grid-row: 5/5;
 }
+.billeder_vertikalt {
+  display: none;
+}
 @media (width > 900px) {
-  .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+  /* .billeder_vertikalt {
+    /* sæt css ind for billeder */
+}
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
