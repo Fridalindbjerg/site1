@@ -14,14 +14,19 @@
 /* vis burger icon i mobile view */
 .burger-menu {
   display: block;
+  padding: 0 53% 0 0;
 }
 
 /* skjul menuen */
 nav ul {
   display: none;
-  background: #fff;
+  background: #771515;
   position: absolute;
-  width: calc(100% - 5px); /* bredden er 100% minus højre/venstre padding */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  height: 100%; /* bredden er 100% minus højre/venstre padding */
 }
 
 /* vis menu når checkbox er checked */
@@ -31,12 +36,16 @@ nav ul {
 
 nav a {
   padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
-  /* padding-left: calc(5px + 2em); */
-  /* margin-left: -2em; */
   line-height: 2.5em;
   width: 100%;
   display: inline-block;
-  color: black;
+  color: #f2e8d6;
+  font-size: 3 rem;
+}
+
+#burger-toggle:checked + label {
+  color: #f2e8d6; /* Ændret farve når den er checked */
+  background-color: #771515; /* Ekstra: Ændret baggrundsfarve */
 }
 
 /* FOOTER */
@@ -72,37 +81,37 @@ body {
   background-color: #f2e8d6;
 }
 
-#logo{
+#logo {
   width: 100%;
 }
-header{
+header {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: space-between;
   align-items: center;
 }
 
-#Book{
+#Book {
   text-align: right;
 }
-#Book a{
+#Book a {
   color: #771515;
   list-style: none;
   font-weight: 600;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 16px;
   text-decoration: none;
 }
 
 @media (width >=800px) {
   .burger-menu {
-    font-size: 3rem;}
-  #logo{
+    font-size: 3rem;
+  }
+  #logo {
     width: 50%;
     margin-left: 7.5cqw;
   }
-  #Book a{
+  #Book a {
     font-size: 22px;
   }
-
 }
