@@ -1,182 +1,254 @@
 /*BILLEDE GALLERI*/
 .gallery {
+  margin-top: 3em;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 15px;
+  scrollbar-width: none;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.gallery .col {
+  flex: 0 0 33%;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+/*MEDIA BILLEDE GALLERI*/
+@media (width >=800px) {
+  .gallery {
     margin-top: 3em;
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
-    gap: 15px;
     scrollbar-width: none;
+    gap: 15px;
+  }
 
-}
-
-.gallery img{
+  .gallery img {
     width: 100%;
     aspect-ratio: 3/4;
-    object-fit:cover;
-}
+    object-fit: cover;
+  }
 
-.gallery .col {
-    flex: 0 0 33%;
-}
+  .gallery .col {
+    flex: 0 0 15%;
+  }
 
-.gallery::-webkit-scrollbar {
-    display: none; }
-
-/*MEDIA BILLEDE GALLERI*/
-@media (width >=800px) {
-        .gallery {
-            margin-top: 3em;
-            display: flex;
-            overflow-x: scroll;
-            scroll-behavior: smooth;
-            scrollbar-width: none;
-            gap: 15px;
-        
-        }
-        
-        .gallery img{
-            width: 100%;
-            aspect-ratio: 3/4;
-            object-fit:cover ;
-        }
-        
-        .gallery .col {
-            flex: 0 0 15%;
-        }
-        
-        .gallery::-webkit-scrollbar {
-            display: none; }
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* FOOTER */
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #771515;
-  }
-  
-  footer li {
-    list-style: none;
-    color: #f2e8d6;
-    line-height: 2em;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  
-  footer li a {
-    color: #f2e8d6;
-    line-height: 2em;
-    margin-top: 1em;
-  }
-  
-  #højre {
-    text-align: right;
-    padding-right: 1em;
-  }
-  
-  #venstre {
-    padding-left: 1em;
-  }
-  
-  body {
-    background-color: #f2e8d6;
-  }
-
-  /* ********************* burgermenu ******************/
-
-.burger-menu {
-    font-size: 3rem;
-    cursor: pointer;
-    display: none;
-    color: #771515;
-    width: 100%;
-  }
-  #burger-toggle {
-    display: none;
-  }
-  
-  /* vis burger icon i mobile view */
-  .burger-menu {
-    display: block;
-  }
-  
-  /* skjul menuen */
-  nav ul {
-    display: none;
-    background: #fff;
-    position: absolute;
-    width: calc(100% - 5px); /* bredden er 100% minus højre/venstre padding */
-  }
-  
-  /* vis menu når checkbox er checked */
-  #burger-toggle:checked + label + nav ul {
-    display: block;
-  }
-  
-  nav a {
-    padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
-    /* padding-left: calc(5px + 2em); */
-    /* margin-left: -2em; */
-    line-height: 2.5em;
-    width: 100%;
-    display: inline-block;
-    color: black;
-  }
-
-header{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    justify-items: space-between;
-    align-items: center;
-  }
-
-
-#Book{
-    text-align: right;
-  }
-  #Book a{
-    color: #771515;
-    list-style: none;
-    font-weight: 600;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
-    text-decoration: none;
-  }
-
-
-
-.tider{
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #771515;
 }
 
-.tider li{
+footer li {
+  list-style: none;
+  color: #f2e8d6;
+  line-height: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+footer li a {
+  color: #f2e8d6;
+  line-height: 2em;
+  margin-top: 1em;
+}
+
+#højre {
+  text-align: right;
+  padding-right: 1em;
+}
+
+#venstre {
+  padding-left: 1em;
+}
+
+body {
+  background-color: #f2e8d6;
+}
+
+/* ********************* burgermenu ******************/
+
+.burger-menu {
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+  color: #771515;
+  width: 100%;
+}
+#burger-toggle {
+  display: none;
+}
+
+/* vis burger icon i mobile view */
+.burger-menu {
+  display: block;
+}
+
+/* skjul menuen */
+nav ul {
+  display: none;
+  background: #fff;
+  position: absolute;
+  width: calc(100% - 5px); /* bredden er 100% minus højre/venstre padding */
+}
+
+/* vis menu når checkbox er checked */
+#burger-toggle:checked + label + nav ul {
+  display: block;
+}
+
+nav a {
+  padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
+  /* padding-left: calc(5px + 2em); */
+  /* margin-left: -2em; */
+  line-height: 2.5em;
+  width: 100%;
+  display: inline-block;
+  color: black;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: space-between;
+  align-items: center;
+}
+
+#Book {
+  text-align: right;
+}
+#Book a {
+  color: #771515;
+  list-style: none;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/*.tider {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.tider li {
+  list-style: none;
+  line-height: 2.5em;
+  font-size: 17px;
+
+  margin-bottom: 10px;
+}
+
+.tider h2 {
+  margin-left: 10%;
+  color: #472e2e;
+}
+*/
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr; /* Som standard én kolonne */
+  gap: 20px;
+  padding: 20px;
+  align-items: start;
+}
+
+/* Tider Section */
+.tider {
+  text-align: center;
+}
+
+.tider h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.tider ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tider li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Image Container Section */
+.image-container {
+  display: none; /* Skjul billeder som standard */
+  gap: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Valgfri skygge */
+}
+
+.header {
+  text-align: center;
+  margin-left: 2.5cqw;
+}
+
+.header a {
+  color: #472e2e;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.header h2 {
+  color: #472e2e;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+@media (width > 900px) {
+  /*.tider {
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 8%;
+    margin-bottom: 15%;
+  }
+
+  .tider li {
     list-style: none;
     line-height: 2.5em;
     font-size: 17px;
-}
+  }
 
-.tider h2{
+  .tider h2 {
     margin-left: 2.5cqw;
-    color: #472E2E;
-}
+    color: #472e2e;
+    margin-top: 10%;
+    font-size: 35px;
+  }*/
 
+  .content {
+    grid-template-columns: 1fr 1fr; /* To kolonner */
+  }
 
-
-.header{
-    text-align: center;
-    margin-left: 2.5cqw;
-
-}
-
-.header a{
-    color: #472E2E;
-    font-weight: 600;
-    font-size: 19px;
-}
-
-.header h2{
-    color: #472E2E;
-    font-weight: 600;
-    font-size: 28px;
+  .image-container {
+    display: grid; /* Vis billeder ved stor skærm */
+    grid-template-columns: 1fr 1fr; /* To billeder ved siden af hinanden */
+    gap: 20px;
+  }
 }
