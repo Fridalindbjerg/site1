@@ -103,8 +103,12 @@ h1 {
 @media (width > 900px) {
   /* .billeder_vertikalt {
     /* sæt css ind for billeder */
-}
-.menu {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+  }
+  .grid_menu {
+    grid-column: 2/3;
+  }
 }
