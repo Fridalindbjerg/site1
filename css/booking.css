@@ -1,8 +1,6 @@
 .box {
   max-width: 700px;
-  display: flex;
-  justify-content: center; /* Centrerer vandret */
-  align-items: center; /* Centrerer lodret */
+  margin: 0 auto;
 }
 
 .calendar {
@@ -25,6 +23,10 @@
   /* border-radius: 5px; */
   font-size: 2cqh;
   /* font-weight: bold; */
+}
+
+.day:hover {
+  background-color: white;
 }
 
 .weekday {
@@ -74,6 +76,7 @@
 
   .year {
     padding: 42% 0% 0% 0%;
+    font-size: 40.7px;
   }
 
   .month {
