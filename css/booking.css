@@ -36,7 +36,7 @@
   grid-column: span 5;
   padding-top: 9%;
   /* padding-bottom: 20px; */
-  font-size: 12cqw;
+  font-size: 50 px;
 }
 
 @media (width >=400px) {
