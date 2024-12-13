@@ -104,7 +104,7 @@ h1 {
   }
 }
 @media (width > 900px) {
-  .menu {
+  .menu1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: end;
