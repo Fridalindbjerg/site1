@@ -97,12 +97,13 @@ h1 {
   grid-column: 3/7;
   grid-row: 5/5;
 }
-.billeder_vertikalt {
-  display: none;
+/* får at billederne ikke bliver vist i mobile version */
+@media (width < 900px) {
+  .billeder_vertikalt {
+    display: none;
+  }
 }
 @media (width > 900px) {
-  /* .billeder_vertikalt {
-    /* sæt css ind for billeder */
   .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,5 +111,10 @@ h1 {
   }
   .grid_menu {
     grid-column: 2/3;
+  }
+  .billeder_vertikalt img {
+    display: inline;
+    height: 300px;
+    width: auto;
   }
 }
