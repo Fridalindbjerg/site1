@@ -57,26 +57,25 @@ nav a:hover {
   background-color: #771515; /* Ekstra: Ændret baggrundsfarve */
 }
 
-#book {
+#Book {
   text-align: right;
 }
 
-#book a {
+#Book a {
   color: #771515;
   list-style: none;
   font-weight: 600;
   font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
+  font-size: 12px;
   text-decoration: none;
   border: #771515 3px solid;
-  border-radius: 40px;
+  border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
   transform: translateY(-2px); /* Let løft */
-  padding: 7px 20px;
-  margin-right: 10px;
+  padding: 7px 15px;
 }
 
-#book a:hover {
+#Book a:hover {
   background-color: #771515; /* Skift baggrundsfarve */
   color: #f2e8d6; /* Skift tekstfarve */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
@@ -138,7 +137,7 @@ header {
     width: 60%;
     margin-left: 7.5cqw;
   }
-  #Book a {
+  #Book a{
     font-size: 22px;
   }
 
