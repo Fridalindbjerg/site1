@@ -87,8 +87,10 @@ body {
   font-size: 3rem;
   cursor: pointer;
   display: none;
-  color: #771515;
+  color: #f2e8d9;
   width: 100%;
+  margin-left: 0.1em;
+  
 }
 #burger-toggle {
   display: none;
@@ -102,9 +104,13 @@ body {
 /* skjul menuen */
 nav ul {
   display: none;
-  background: #fff;
+  background: #771515;
   position: absolute;
-  width: calc(100% - 5px); /* bredden er 100% minus højre/venstre padding */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 32.1%;
+  height: 100%; /* bredden er 100% minus højre/venstre padding */ /* bredden er 100% minus højre/venstre padding */
 }
 
 /* vis menu når checkbox er checked */
@@ -113,14 +119,19 @@ nav ul {
 }
 
 nav a {
-  padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
-  /* padding-left: calc(5px + 2em); */
-  /* margin-left: -2em; */
-  line-height: 2.5em;
   width: 100%;
+  padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
+  line-height: 2.5em;
   display: inline-block;
-  color: black;
+  color: #f2e8d9;
+  font-size: 3em;
+  text-decoration: none;
+  padding-left: 10px;
 }
+nav a:hover {
+  color: white;
+}
+
 
 header {
   display: grid;
@@ -131,14 +142,27 @@ header {
 
 #Book {
   text-align: right;
+  margin-right: 0.5em;
 }
 #Book a {
-  color: #771515;
+  color: #f2e8d9;
   list-style: none;
   font-weight: 600;
   font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-size: 12px;
   text-decoration: none;
+  border: #f2e8d9 3px solid;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
+  transform: translateY(-2px); /* Let løft */
+  padding: 7px 15px;
+}
+
+#Book a:hover {
+  background-color: #771515; /* Skift baggrundsfarve */
+  color: #f2e8d6; /* Skift tekstfarve */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
+  transform: translateY(-2px); /* Let løft */
 }
 
 /*.tider {
@@ -251,4 +275,37 @@ header {
     grid-template-columns: 1fr 1fr; /* To billeder ved siden af hinanden */
     gap: 20px;
   }
+
+#Book a{
+  font-size: 22px;
+}
+
+nav a {
+  font-size: 3em;
+}
+nav ul {
+  width: 33%;
+}
+}
+
+
+/*VIDEO*/
+header{
+  position: relative;
+}
+
+video{
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  margin-top: 40cqw;
+}
+
+body{
+  margin: 0;
+}
+
+main{
+  margin-top: 50cqw;
 }
