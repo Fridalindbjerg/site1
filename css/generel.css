@@ -29,7 +29,7 @@ nav ul {
   padding: 0;
   margin: 0;
   width: 32.1%;
-  height: 100%; /* bredden er 100% minus højre/venstre padding */
+  height: 100%; /* bredden er 100% minus højre/venstre padding */ /* bredden er 100% minus højre/venstre padding */
 }
 
 /* vis menu når checkbox er checked */
