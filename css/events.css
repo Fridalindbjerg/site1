@@ -35,7 +35,8 @@
     margin-top: 3em;
     display: flex;
     overflow-x: scroll;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
+    white-space: nowrap;
     gap: 15px;
     scrollbar-width: none;
 
@@ -63,7 +64,7 @@
         margin-top: 3em;
         display: flex;
         overflow-x: scroll;
-        scroll-behavior: smooth;
+        scroll-behavior: auto;
         scrollbar-width: none;
         gap: 10px;
     
