@@ -86,25 +86,32 @@
     <script>
 document.addEventListener("DOMContentLoaded", function () {
   const grid = document.querySelector(".grid-5");
-  const scrollSpeed = 1; // Adjust for smoothness
+  const scrollSpeed = 0.4; // Slow speed using fractions
+  let accumulatedScroll = 0; // Accumulator for fractional changes
 
-  // Duplicate content to create the illusion of infinite scroll
+  // Duplicate content for seamless scrolling
   const clonedContent = grid.innerHTML;
   grid.innerHTML += clonedContent;
 
   function autoScroll() {
-    grid.scrollLeft += scrollSpeed;
+    accumulatedScroll += scrollSpeed; // Accumulate the fractional scroll value
 
-    // Reset scroll position when halfway through (avoids visual jump)
-    if (grid.scrollLeft >= grid.scrollWidth / 2) {
-      grid.scrollLeft = 0;
+    if (accumulatedScroll >= 1) { // Apply the scroll once we accumulate at least 1px
+      grid.scrollLeft += Math.floor(accumulatedScroll);
+      accumulatedScroll %= 1; // Keep the leftover fraction
     }
 
-    requestAnimationFrame(autoScroll); // Continue the animation
+    // When scroll reaches the duplicated content, reset to avoid visual jump
+    if (grid.scrollLeft >= grid.scrollWidth / 2) {
+      grid.scrollLeft = 0; // Reset scroll position
+    }
+
+    requestAnimationFrame(autoScroll); // Continue animation
   }
 
-  autoScroll(); // Start the scrolling
+  autoScroll(); // Start infinite scrolling
 });
+
       </script>
 </body>
 </html>
