@@ -28,7 +28,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 33%;
+  width: 32.1%;
   height: 100%; /* bredden er 100% minus højre/venstre padding */
 }
 
@@ -144,4 +144,6 @@ header {
   nav a {
     font-size: 3em;
   }
+  nav ul {
+    width: 33%;}
 }
