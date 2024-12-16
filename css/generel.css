@@ -117,6 +117,7 @@ footer li a {
 
 body {
   background-color: #f2e8d9;
+  color: #472e2e;
 }
 
 #logo {
@@ -137,7 +138,7 @@ header {
     width: 60%;
     margin-left: 7.5cqw;
   }
-  #Book a{
+  #Book a {
     font-size: 22px;
   }
 
@@ -145,5 +146,6 @@ header {
     font-size: 3em;
   }
   nav ul {
-    width: 33%;}
+    width: 33%;
+  }
 }

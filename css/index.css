@@ -78,7 +78,7 @@ footer li a {
 }
 
 body {
-  background-color: #f2e8d6;
+  background-color: #f2e8d9;
 }
 
 /* ********************* burgermenu ******************/
@@ -103,7 +103,7 @@ body {
 /* skjul menuen */
 nav ul {
   display: none;
-  background: #771515;
+  /* background: #771515; */
   position: absolute;
   list-style: none;
   padding: 0;
@@ -115,6 +115,10 @@ nav ul {
 /* vis menu når checkbox er checked */
 #burger-toggle:checked + label + nav ul {
   display: block;
+}
+
+#burger-toggle:checked + label {
+  background-color: transparent;
 }
 
 nav a {
@@ -131,6 +135,9 @@ nav a:hover {
   color: white;
 }
 
+nav ul {
+  background: transparent;
+}
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -162,26 +169,6 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
   transform: translateY(-2px); /* Let løft */
 }
-
-/*.tider {
-  text-align: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-.tider li {
-  list-style: none;
-  line-height: 2.5em;
-  font-size: 17px;
-
-  margin-bottom: 10px;
-}
-
-.tider h2 {
-  margin-left: 10%;
-  color: #472e2e;
-}
-*/
 
 .content {
   display: grid;
@@ -243,27 +230,6 @@ header {
 }
 
 @media (width > 900px) {
-  /*.tider {
-    text-align: left;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 8%;
-    margin-bottom: 15%;
-  }
-
-  .tider li {
-    list-style: none;
-    line-height: 2.5em;
-    font-size: 17px;
-  }
-
-  .tider h2 {
-    margin-left: 2.5cqw;
-    color: #472e2e;
-    margin-top: 10%;
-    font-size: 35px;
-  }*/
-
   .content {
     grid-template-columns: 1fr 1fr; /* To kolonner */
   }
@@ -284,6 +250,27 @@ header {
   nav ul {
     width: 33%;
   }
+}
+
+.outline-button {
+  color: #f2e8d9;
+  list-style: none;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  text-decoration: none;
+  border: #771515 3px solid;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
+  transform: translateY(-2px); /* Let løft */
+  padding: 7px 15px;
+}
+
+.outline-button:hover {
+  background-color: #771515; /* Skift baggrundsfarve */
+  color: #f2e8d6; /* Skift tekstfarve */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
+  transform: translateY(-2px); /* Let løft */
 }
 
 /*VIDEO*/
