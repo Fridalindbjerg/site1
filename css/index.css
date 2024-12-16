@@ -57,13 +57,13 @@ footer {
 
 footer li {
   list-style: none;
-  color: #f2e8d6;
+  color: #f2e8d9;
   line-height: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 footer li a {
-  color: #f2e8d6;
+  color: #f2e8d9;
   line-height: 2em;
   margin-top: 1em;
 }
@@ -87,8 +87,9 @@ body {
   font-size: 3rem;
   cursor: pointer;
   display: none;
-  color: #771515;
+  color: #f2e8d9;
   width: 100%;
+  margin-left: 0.1em;
 }
 #burger-toggle {
   display: none;
@@ -102,9 +103,13 @@ body {
 /* skjul menuen */
 nav ul {
   display: none;
-  background: #fff;
+  background: #771515;
   position: absolute;
-  width: calc(100% - 5px); /* bredden er 100% minus højre/venstre padding */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 32.1%;
+  height: 100%; /* bredden er 100% minus højre/venstre padding */ /* bredden er 100% minus højre/venstre padding */
 }
 
 /* vis menu når checkbox er checked */
@@ -113,13 +118,17 @@ nav ul {
 }
 
 nav a {
-  padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
-  /* padding-left: calc(5px + 2em); */
-  /* margin-left: -2em; */
-  line-height: 2.5em;
   width: 100%;
+  padding: 3px 0 4px 5px; /* Juster efter hvor høje menupunkterne skal være */
+  line-height: 2.5em;
   display: inline-block;
-  color: black;
+  color: #f2e8d9;
+  font-size: 3em;
+  text-decoration: none;
+  padding-left: 10px;
+}
+nav a:hover {
+  color: white;
 }
 
 header {
@@ -131,14 +140,27 @@ header {
 
 #Book {
   text-align: right;
+  margin-right: 0.5em;
 }
 #Book a {
-  color: #771515;
+  color: #f2e8d9;
   list-style: none;
   font-weight: 600;
   font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-size: 12px;
   text-decoration: none;
+  border: #f2e8d9 3px solid;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
+  transform: translateY(-2px); /* Let løft */
+  padding: 7px 15px;
+}
+
+#Book a:hover {
+  background-color: #771515; /* Skift baggrundsfarve */
+  color: #f2e8d6; /* Skift tekstfarve */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tilføj skygge */
+  transform: translateY(-2px); /* Let løft */
 }
 
 /*.tider {
@@ -155,23 +177,18 @@ header {
   margin-bottom: 10px;
 }
 
-.outline-button:hover {
-  background-color: #3c2c2c;
-  color: #f2e8d6;
-  cursor: pointer;
+.tider h2 {
+  margin-left: 10%;
+  color: #472e2e;
 }
-
 */
 
 .content {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* Som standard én kolonne */
   gap: 20px;
   padding: 20px;
   align-items: start;
-  margin-top: 10%;
-  margin-right: 10%;
-  margin-bottom: 15%;
 }
 
 /* Tider Section */
@@ -191,8 +208,8 @@ header {
 }
 
 .tider li {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 /* Image Container Section */
@@ -204,12 +221,8 @@ header {
 .image-container img {
   width: 100%;
   height: auto;
-
+  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Valgfri skygge */
-}
-
-.events_d {
-  display: none;
 }
 
 .header {
@@ -230,6 +243,27 @@ header {
 }
 
 @media (width > 900px) {
+  /*.tider {
+    text-align: left;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 8%;
+    margin-bottom: 15%;
+  }
+
+  .tider li {
+    list-style: none;
+    line-height: 2.5em;
+    font-size: 17px;
+  }
+
+  .tider h2 {
+    margin-left: 2.5cqw;
+    color: #472e2e;
+    margin-top: 10%;
+    font-size: 35px;
+  }*/
+
   .content {
     grid-template-columns: 1fr 1fr; /* To kolonner */
   }
@@ -239,4 +273,36 @@ header {
     grid-template-columns: 1fr 1fr; /* To billeder ved siden af hinanden */
     gap: 20px;
   }
+
+  #Book a {
+    font-size: 22px;
+  }
+
+  nav a {
+    font-size: 3em;
+  }
+  nav ul {
+    width: 33%;
+  }
+}
+
+/*VIDEO*/
+header {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  margin-top: 40cqw;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin-top: 50cqw;
 }
