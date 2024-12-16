@@ -5,7 +5,8 @@ html {
   --bold: bold;
 }
 h1 {
-  text-align: center;
+  text-align: right;
+  margin-right: 20%;
 }
 .grid_menu {
   display: grid;
@@ -67,7 +68,7 @@ h1 {
   writing-mode: var(--writingmode);
   text-orientation: var(--orientation);
   font-weight: var(--bold);
-  transform: rotate(180deg);
+  transform: rotate(180deg); /*gør at teksten skrives nedefra frem for oppefra*/
 }
 .vin {
   grid-column: 3/7;
@@ -119,6 +120,7 @@ h1 {
     grid-column: 2/3;
     grid-row: 1/2;
     justify-self: start;
+    padding-top: 15%;
   }
   .billeder_vertikalt img {
     display: flex;
