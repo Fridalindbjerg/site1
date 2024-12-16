@@ -161,9 +161,11 @@ header {
   cursor: pointer;
 }
 
+*/
+
 .content {
   display: grid;
-  grid-template-columns: 1fr; /* Som standard én kolonne */
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
   align-items: start;
