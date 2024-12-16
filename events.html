@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <link rel="stylesheet" href="css/events.css">
-    <link rel="stylesheet" href="css/generel.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
     <title>Document</title>
-</head>
-<body>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
     <header class="grid-header">
-        <div>
+      <div>
         <input type="checkbox" id="burger-toggle" />
         <label for="burger-toggle" class="burger-menu"> ☰ </label>
         <!-- &#9776; -->
         <nav>
           <ul class="menu">
-            <li><a href="#">Book bord</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="booking.html">Book bord</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="menu.html">Menu</a></li>
           </ul>
         </nav>
+      </div>
+      <div>
+        <a href="index.html">
+          <img id="logo" src="img/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div id="Book">
+        <a href="booking.html">Book bord</a>
+      </div>
+    </header>
+    <main>
+      <div class="grid-5">
+        <div class="col"><img src="img/img_events/bar.webp" alt="1" /></div>
+        <div class="col"><img src="img/img_events/drink_terning.webp" alt="2" /></div>
+        <div class="col"><img src="img/img_events/tank2.webp" alt="8" /></div>
+        <div class="col"><img src="img/img_events/stue.webp" alt="5" /></div>
+        <div class="col"><img src="img/img_events/dart.webp" alt="3" /></div>
+        <div class="col"><img src="img/img_events/tank.webp" alt="7" /></div>
+        <div class="col"><img src="img/img_events/skål2.webp" alt="9" /></div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <h2>Events</h2>
+          <div>
+            <p>På Torsten er der, ud over en kold øl, plads til massere af fede aktiviteter.</p>
+            <p>Spil dart i den hyggelige krog, lån rafflebægere til et spil ved bordet eller duk op når vi viser landskamp på tv'et!</p>
+          </div>
         </div>
         <div>
-            <a href="index.html">
-            <img id="logo" src="img/logo.png" alt="logo">
-        </a>
+          <img id="skål" src="img/img_events/drink_terning2.webp" alt="Karl og Tobias" />
         </div>
-        <div id="Book">
-            <a href="booking.html">Book bord</a>
-        </div>
-      </header>
-    <main>
-        <div class="grid-5">
-            <div class="col"> <img src="img/img_events/bar.webp" alt="1"></div>
-            <div class="col"> <img src="img/img_events/drink_terning.webp" alt="2"></div>
-            <div class="col"> <img src="img/img_events/tank2.webp" alt="8"></div>
-            <div class="col"> <img src="img/img_events/stue.webp" alt="5"></div>
-            <div class="col"> <img src="img/img_events/dart.webp" alt="3"></div>
-            <div class="col"> <img src="img/img_events/tank.webp" alt="7"></div>
-            <div class="col"> <img src="img/img_events/skål2.webp" alt="9"></div>
-        </div>
-        <div class="grid-2">
-            <div>
-                <H2>Events</H2>
-                <div>
-                <p>På Torsten er der, ud over en kold øl, plads til massere af fede aktiviteter. </p>
-                <p>Spil dart i den hyggelige krog, lån rafflebægere til et spil ved bordet eller duk op når vi viser landskamp på tv'et!</p>
-            </div>
-            </div>
-            <div>
-                <img id="skål" src="img/img_events/drink_terning2.webp" alt="Karl og Tobias">
-            </div>
-        </div>
-        <div id="lottie">
-            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-            <dotlottie-player src="https://lottie.host/5c2be5af-4e0d-4193-ba4a-31e6b7dd3777/Z3DP0wgexP.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
-        </div>
+      </div>
+      <div id="lottie">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/5c2be5af-4e0d-4193-ba4a-31e6b7dd3777/Z3DP0wgexP.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+      </div>
     </main>
     <footer>
-        <div>
-            <ul id="venstre">
-                <li>
-                    <a href="https://www.instagram.com/bar_torsten/" target="_blank">Instagram</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/p/Bar-Torsten-61559580519200/?locale=da_DK" target="_blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://all-gravy.typeform.com/to/LsTgyTQr?typeform-source=www.bartorsten.dk" target="_blank">Ledige stillinger</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul id="højre">
-                <li>
-                    <p>Fælledvej 19, 2200 København N</p>
-                </li>
-                <li>
-                    <p>Telefon: 31 34 34 49</p>
-                </li>
-            </ul>
-        </div>
+      <div>
+        <ul id="venstre">
+          <li>
+            <a href="https://www.instagram.com/bar_torsten/" target="_blank">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/p/Bar-Torsten-61559580519200/?locale=da_DK" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://all-gravy.typeform.com/to/LsTgyTQr?typeform-source=www.bartorsten.dk" target="_blank">Ledige stillinger</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul id="højre">
+          <li>
+            <p>Fælledvej 19, 2200 København N</p>
+          </li>
+          <li>
+            <p>Telefon: 31 34 34 49</p>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const grid = document.querySelector(".grid-5");
-  const scrollSpeed = 0.4; // Slow speed using fractions
-  let accumulatedScroll = 0; // Accumulator for fractional changes
+      document.addEventListener("DOMContentLoaded", function () {
+        const grid = document.querySelector(".grid-5");
+        const scrollSpeed = 0.4; // Slow speed using fractions
+        let accumulatedScroll = 0; // Accumulator for fractional changes
 
-  // Duplicate content for seamless scrolling
-  const clonedContent = grid.innerHTML;
-  grid.innerHTML += clonedContent;
+        // Duplicate content for seamless scrolling
+        const clonedContent = grid.innerHTML;
+        grid.innerHTML += clonedContent;
 
-  function autoScroll() {
-    accumulatedScroll += scrollSpeed; // Accumulate the fractional scroll value
+        function autoScroll() {
+          accumulatedScroll += scrollSpeed; // Accumulate the fractional scroll value
 
-    if (accumulatedScroll >= 1) { // Apply the scroll once we accumulate at least 1px
-      grid.scrollLeft += Math.floor(accumulatedScroll);
-      accumulatedScroll %= 1; // Keep the leftover fraction
-    }
+          if (accumulatedScroll >= 1) {
+            // Apply the scroll once we accumulate at least 1px
+            grid.scrollLeft += Math.floor(accumulatedScroll);
+            accumulatedScroll %= 1; // Keep the leftover fraction
+          }
 
-    // When scroll reaches the duplicated content, reset to avoid visual jump
-    if (grid.scrollLeft >= grid.scrollWidth / 2) {
-      grid.scrollLeft = 0; // Reset scroll position
-    }
+          // When scroll reaches the duplicated content, reset to avoid visual jump
+          if (grid.scrollLeft >= grid.scrollWidth / 2) {
+            grid.scrollLeft = 0; // Reset scroll position
+          }
 
-    requestAnimationFrame(autoScroll); // Continue animation
-  }
+          requestAnimationFrame(autoScroll); // Continue animation
+        }
 
-  autoScroll(); // Start infinite scrolling
-});
-
-      </script>
-</body>
+        autoScroll(); // Start infinite scrolling
+      });
+    </script>
+  </body>
 </html>
