@@ -95,7 +95,7 @@ body {
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
