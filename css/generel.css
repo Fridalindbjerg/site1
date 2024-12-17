@@ -84,6 +84,19 @@ nav a:hover {
 
 #logo {
   padding-top: 10px;
+  width: 100%;
+}
+
+body {
+  background-color: #f2e8d9;
+  color: #472e2e;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: space-between;
+  align-items: center;
 }
 
 /* FOOTER */
@@ -113,21 +126,6 @@ footer li a {
 
 #venstre {
   padding-left: 1em;
-}
-
-body {
-  background-color: #f2e8d9;
-  color: #472e2e;
-}
-
-#logo {
-  width: 100%;
-}
-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: space-between;
-  align-items: center;
 }
 
 @media (width >=800px) {
