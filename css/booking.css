@@ -63,6 +63,14 @@
   max-width: 300px;
 }
 
+button {
+  margin: 20px 0;
+}
+
+form label {
+  margin-top: 10px;
+}
+
 @media (width >=400px) {
   .day {
     justify-content: right;

@@ -100,6 +100,7 @@ header {
 }
 
 /* FOOTER */
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -107,6 +108,8 @@ footer {
 }
 
 footer li {
+  justify-content: center; /* Centrerer horisontalt (valgfrit) */
+
   list-style: none;
   color: #f2e8d6;
   line-height: 2em;
@@ -126,6 +129,12 @@ footer li a {
 
 #venstre {
   padding-left: 1em;
+}
+
+footer img {
+  max-width: 32px;
+  padding-right: 5px;
+  line-height: 2em;
 }
 
 @media (width >=800px) {
