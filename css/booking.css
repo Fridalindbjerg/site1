@@ -55,11 +55,12 @@
   margin: 0px;
 }
 
-form {
+.form {
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
+  max-width: 300px;
 }
 
 @media (width >=400px) {
