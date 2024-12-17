@@ -1,5 +1,4 @@
-.box,
-.form {
+.box {
   max-width: 700px;
   margin: 0 auto;
 }
@@ -50,10 +49,17 @@
   grid-column: span 5;
   /* padding-top: 9%; */
   /* padding-bottom: 20px; */
-  font-size: 11cqw;
+  font-size: 8cqw;
   align-self: end;
   padding: 0px;
   margin: 0px;
+}
+
+form {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 @media (width >=400px) {
@@ -69,6 +75,23 @@
   }
 }
 
+@media (width >=500px) {
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .form {
+    margin: 0;
+    padding-top: 40%;
+  }
+
+  main {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
 @media (width >=700px) {
   .day {
     height: 70px;
@@ -81,6 +104,11 @@
   }
 
   .month {
-    font-size: 78px;
+    font-size: 63px;
+  }
+
+  main {
+    margin: 0 auto;
+    max-width: none;
   }
 }
