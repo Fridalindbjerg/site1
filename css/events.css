@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+
+#tekst2{
+    display: none;
+}
+
 .grid-2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,5 +110,11 @@
         object-fit: cover;
     }
 
+    #tekst2{
+        display:contents;
+    }
 
+    
 }
+
+
